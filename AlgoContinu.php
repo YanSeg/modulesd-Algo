@@ -34,6 +34,26 @@ d’une chaîne de caractères. Cette fonction prend 1 paramètres en entrée (S
 retourne un entier.
 
 
+version sans la méthode split ________________________________________________________________________________________________________________________________________________________________
+
+String X = "a  a   dfdf ddf  vxcvxcvc    jdsjqf sd ddzdz ds ";
+char o =' ';
+
+int nb = 0;
+for (int i=0; i < X.length(); i++) {
+  if (i==0 &&  X.charAt(i)!=o || X.charAt(i-1)==o && X.charAt(i)!=o) {
+    nb++;
+  }
+}
+println (nb);
+______________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
 String phrase = "ma phrase de tset pour. compter  ... les mots .. je met plein d'  espaces";
 String[] monTableau = splitTokens(phrase);
 // Affichage du tableau
